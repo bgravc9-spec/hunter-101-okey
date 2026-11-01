@@ -1,7 +1,9 @@
 package com.huntergames.okey101;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.webkit.JavascriptInterface;
 import android.webkit.CookieManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -49,6 +51,7 @@ public final class MainActivity extends Activity {
         webSettings.setMediaPlaybackRequiresUserGesture(true);
 
         CookieManager.getInstance().setAcceptCookie(true);
+        webView.addJavascriptInterface(new OrientBridge(), "HunterOrient");
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
@@ -58,6 +61,18 @@ public final class MainActivity extends Activity {
         webView.setWebChromeClient(new WebChromeClient());
         webView.setBackgroundColor(Color.rgb(5, 13, 29));
         webView.loadUrl(HOME);
+    }
+
+    private final class OrientBridge {
+        @JavascriptInterface
+        public void landscape() {
+            runOnUiThread(() -> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE));
+        }
+
+        @JavascriptInterface
+        public void portrait() {
+            runOnUiThread(() -> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT));
+        }
     }
 
     @Override
