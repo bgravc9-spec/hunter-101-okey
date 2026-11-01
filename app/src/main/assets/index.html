@@ -1709,6 +1709,176 @@ body.hunter-mini-playing{overflow:hidden!important}
  .v13-game.v39-game .v21-scorebar.v42-scorebar small{font-size:clamp(7px,.8vw,9px)!important}
 }
 </style>
+<style id="hunter-v46-plus-table">
+.v46-game{
+  grid-template-rows:11.5% minmax(0,1fr) 0 0 minmax(148px,33%)!important;
+  background:#0a4c96!important;
+  background-image:none!important;
+}
+.v46-game .v13-top{
+  display:grid!important;
+  grid-template-columns:1fr auto 1fr;
+  grid-template-rows:46% 54%;
+  align-items:center;
+  padding:0 8px 3px!important;
+  background:#083f86!important;
+  border:0!important;
+  gap:6px;
+}
+.v46-game .v46-banner{
+  grid-column:1 / -1;
+  height:100%;
+  display:grid;
+  place-items:center;
+  margin:0 -8px;
+  background:linear-gradient(#ff2a22,#c40010 70%,#9d000c);
+  color:#fff;
+  font-weight:1000;
+  letter-spacing:.8px;
+  font-size:clamp(15px,2.35vw,30px);
+  text-shadow:0 2px 0 #6d0008;
+  line-height:1;
+}
+.v46-game .v46-banner b{font-style:italic}
+.v46-game .v41-reference-brand,
+.v46-game .v39-game-title,
+.v46-game .v44-stake,
+.v46-game .v44-chat-bubble,
+.v46-game .v44-status,
+.v46-game .v44-pair-badge,
+.v46-game .v21-board-meta,
+.v46-game .v21-northback,
+.v46-game .v41-gift,
+.v46-game .v44-quick-chat,
+.v46-game .v41-work{display:none!important}
+.v46-game .v13-top-left{grid-column:1;grid-row:2;justify-self:start}
+.v46-game .v13-top-person{
+  position:static!important;transform:none!important;left:auto!important;width:auto!important;max-width:280px;
+  grid-column:2;grid-row:2;height:92%;
+  border:2px solid #d7b24a!important;border-radius:8px!important;
+  background:linear-gradient(#163a78,#0c2458)!important;
+  box-shadow:none!important;
+}
+.v46-game .v13-top-right{grid-column:3;grid-row:2;justify-self:end}
+.v46-game .v13-top-pill,.v46-game .v13-tiny-button{
+  min-height:0!important;height:clamp(22px,4.2vh,34px)!important;
+  font-size:clamp(10px,1.2vw,14px)!important;
+  background:#0b2f6e!important;border-color:#2f6eb8!important;box-shadow:none!important;
+}
+.v46-game .v13-store{background:linear-gradient(#3ecf2a,#17800c)!important;border-color:#b6ff78!important}
+.v46-game .v21-middle{
+  grid-template-columns:clamp(58px,7vw,86px) minmax(0,1fr) clamp(74px,8.5vw,108px) clamp(58px,7vw,86px)!important;
+  gap:6px!important;padding:6px 8px 2px!important;background:#0a4c96;
+}
+.v46-game .v21-side{grid-template-rows:minmax(0,1fr) 46px!important;gap:4px}
+.v46-game .v21-corner:first-child{display:none!important}
+.v46-game .v21-playerpanel{
+  border:2px solid #1d4e86;border-radius:10px;background:linear-gradient(#12386f,#0a2450);
+  padding:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:0;
+}
+.v46-game .v21-playerpanel img{width:70%;aspect-ratio:1;object-fit:cover;border-radius:8px;border:2px solid #7eb6ff}
+.v46-game .v21-playerpanel strong{font-size:10px;text-align:center;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.v46-game .v21-playerpanel small,.v46-game .v21-backstack{display:none}
+.v46-game .v21-playerpanel.onturn{border-color:#7dff9a;box-shadow:0 0 10px #39e86a88}
+.v46-game .v21-mainboard{
+  background:#0c3f86!important;
+  border:3px solid #1e6ec4!important;
+  box-shadow:inset 0 0 0 3px #082a5e,0 8px 18px #0006!important;
+  border-radius:6px!important;
+}
+.v46-game .v21-mainboard:before{
+  background-image:linear-gradient(90deg,#1c62b4 1px,transparent 1px),linear-gradient(#1c62b4 1px,transparent 1px)!important;
+  background-size:32px 36px!important;opacity:.7;
+}
+.v46-game .v13-watermark{
+  color:#ffffff18!important;letter-spacing:.35em;font-size:clamp(42px,8vw,110px)!important;font-weight:1000;
+}
+.v46-game .v9-series-head,.v46-game .v9-pair-head,.v46-game .v9-pair-help,.v46-game .v6-opening-progress{display:none!important}
+.v46-game .v13-square-board .v9-board-columns{grid-template-columns:minmax(0,1fr) 22%!important}
+.v46-game .v9-series-inner{top:0!important}
+.v46-game .v9-pair-shelf{background:transparent!important;border:0!important}
+.v46-game .v6-per-cell{background:transparent!important;border-color:#ffffff10!important}
+.v46-game .v6-per-cell .hg-minitile,.v46-game .v6-meld-face{
+  background:linear-gradient(#fff,#f4f1ea)!important;color:inherit;border-radius:3px;
+  box-shadow:0 2px 3px #0008!important;
+}
+.v46-game .v21-tools{
+  background:transparent!important;border:0!important;box-shadow:none!important;
+  justify-content:flex-start!important;gap:3px!important;padding:2px 0!important;
+}
+.v46-game .v46-info-row{text-align:center;font-size:clamp(11px,1.15vw,15px);font-weight:900;color:#fff;line-height:1.15}
+.v46-game .v46-info-row.kalan{display:grid;gap:0}
+.v46-game .v46-info-row.kalan span{font-size:10px;font-weight:700}
+.v46-game .v46-ind{display:grid;place-items:center}
+.v46-game .v46-ind .v13-mini{
+  width:clamp(34px,4.2vw,52px)!important;height:clamp(46px,7vh,68px)!important;
+  background:linear-gradient(#fff,#f3efe6)!important;border-radius:4px;
+  font-size:clamp(22px,2.4vw,34px)!important;box-shadow:0 3px 6px #0008;
+}
+.v46-game .v46-mini{
+  border:1px solid #2a6cbd;background:#0c326e;color:#fff;border-radius:6px;
+  font-size:10px;font-weight:900;padding:4px 2px;
+}
+.v46-game .v46-mini.at{background:#b4233a;border-color:#ff6d7e}
+.v46-game .v46-mini:disabled{opacity:.4}
+.v46-game .v39-controls{display:block!important;height:0!important;overflow:visible!important;padding:0!important}
+.v46-game .v43-core-actions{display:none!important}
+.v46-game .v21-self-banner{
+  display:flex!important;position:absolute;z-index:40;left:50%;bottom:calc(33% + 4px);
+  transform:translateX(-50%);
+  background:linear-gradient(#1f8a34,#0e5c22)!important;border:2px solid #b6ff7a!important;
+  border-radius:8px;padding:2px 10px;min-width:0;height:auto;box-shadow:0 4px 10px #0007;
+}
+.v46-game .v13-bottom{padding:0 6px 6px!important}
+.v46-game .v21-bottom-body{height:100%!important;top:0!important;grid-template-columns:clamp(62px,8vw,96px) minmax(0,1fr) clamp(62px,8vw,96px)!important}
+.v46-game .v13-sort{
+  height:78%!important;align-self:center;
+  background:linear-gradient(#e0a15a,#b87432 45%,#8d4e18)!important;
+  border:3px solid #5c3112!important;border-radius:8px!important;color:#fff!important;
+  box-shadow:inset 0 2px 0 #ffe0a8,0 4px 0 #3d1e08!important;
+  font-size:clamp(11px,1.25vw,16px)!important;letter-spacing:.4px;
+}
+.v46-game .v13-sort span{font-size:0!important;line-height:0}
+.v46-game .v13-sort span:before{
+  content:"";display:block;width:18px;height:24px;margin:0 auto 4px;
+  background:linear-gradient(#fff,#efe8dc);border-radius:3px;border:1px solid #c9b89a;
+  box-shadow:7px 5px 0 #fff,7px 5px 0 1px #c9b89a;
+  font-size:0;
+}
+.v46-game .v13-rack-shell{grid-template-rows:minmax(0,1fr) 18px!important}
+.v46-game .v13-rack{
+  background:repeating-linear-gradient(90deg,#c48945 0 10px,#d7a15c 10px 18px,#b67a38 18px 28px)!important;
+  border-color:#6a3a14!important;box-shadow:inset 0 3px 0 #f0c98a,inset 0 -8px 10px #0005!important;
+}
+.v46-game .v13-rack:before,.v46-game .v13-rack:after{display:none!important}
+.v46-game .v13-rack .v6-rack-slot.occupied .v3-stone{
+  background:linear-gradient(#fff,#f7f3ea)!important;border:1px solid #e4d7c4!important;border-radius:4px!important;
+}
+.v46-game .v13-control-strip{gap:3px}
+.v46-game .v13-control-strip button,.v46-game .v13-scorechip{font-size:9px!important;padding:1px 4px}
+@media (orientation:portrait) and (max-width:900px){
+  .v46-game{grid-template-rows:12% minmax(0,1fr) 0 0 34%!important}
+  .v46-game .v46-banner{font-size:14px}
+  .v46-game .v21-self-banner{bottom:calc(34% + 2px)}
+}
+.v13-game.v21-game.v39-game.v43-game.v44-game.v46-game{
+  grid-template-rows:12% minmax(0,1fr) 0 0 33%!important;
+}
+@media (orientation:landscape){
+  .v13-game.v21-game.v39-game.v43-game.v44-game.v46-game{
+    width:100vw!important;height:100dvh!important;left:0!important;top:0!important;transform:none!important;
+  }
+}
+.v13-game.v39-game.v43-game.v44-game.v46-game .v44-status{display:none!important}
+.v39-game.v43-game.v44-game.v46-game .v13-top-person{
+  position:relative!important;top:auto!important;bottom:auto!important;left:auto!important;
+  transform:none!important;width:auto!important;height:auto!important;max-width:220px!important;
+  border-radius:10px!important;z-index:3;
+}
+.v44-game.v46-game .v13-square-board .v9-board-columns{grid-template-columns:minmax(0,1fr) 0fr!important}
+.v44-game.v46-game .v9-pair-shelf{display:none!important}
+.v44-game.v46-game .v21-mainboard:before{opacity:.85}
+</style>
 <script type="module">
 let audioCtx=null;
 function playSound(type){
@@ -3072,11 +3242,17 @@ function v21Side(g,side){
 }
 function v21RightTools(g,isMe,ii,okey){
  const canOpen=isMe&&g.drawn&&!g.opened?.[myUid()];
- return `<aside class="v21-tools" aria-label="Taş çekme, gösterge ve okey">
-  <div class="v21-room-opts"><div>${g.options?.paired?'EŞLİ':'TEKLİ'}</div><div>${g.options?.folded?'KATLAMALI':'KATLAMASIZ'}</div><div>${g.round}/11 EL</div></div>
-  ${v20CenterDeck(g,isMe)}
-  <div class="v21-indicator"><div class="v21-ind-tile"><small>GÖSTERGE</small>${v13NumberTile(ii.number,ii.color)}</div><div class="v21-ind-tile"><small>OKEY</small>${v13NumberTile(okey.number,okey.color,'real')}</div></div>
-  <div class="v21-open-buttons"><button data-v7-open="series" ${canOpen?'':'disabled'}>SERİ AÇ</button><button data-v7-open="pair" ${canOpen?'':'disabled'}>ÇİFT AÇ</button></div>
+ const hand=myHand()||[];
+ return `<aside class="v21-tools v46-info" aria-label="Gösterge, okey ve masa">
+  <div class="v46-info-row"><b>Tek</b></div>
+  <div class="v46-info-row"><b>Yardımcı</b></div>
+  <div class="v46-info-row kalan"><span>Kalanı</span><strong>${hand.length}/22</strong></div>
+  <div class="v46-ind" title="Gösterge">${v13NumberTile(ii.number,ii.color)}</div>
+  <div class="v46-ind" title="Okey">${v13NumberTile(okey.number,okey.color,'real')}</div>
+  <button type="button" class="v46-mini" data-hg-action="draw" ${isMe&&!g.drawn?'':'disabled'}>ÇEK</button>
+  <button type="button" class="v46-mini at" data-v44-discard ${isMe&&g.drawn?'':'disabled'}>AT</button>
+  <button type="button" class="v46-mini" data-v7-open="series" ${canOpen?'':'disabled'}>SERİ</button>
+  <button type="button" class="v46-mini" data-v7-open="pair" ${canOpen?'':'disabled'}>ÇİFT</button>
  </aside>`;
 }
 v7RenderRoom=function(){
@@ -3088,13 +3264,13 @@ v7RenderRoom=function(){
  const info=v11HandInsight(hand,g.indicator),need=g.options?.folded?Math.max(101,(g.maxOpenScore||100)+1):101,pairNeed=g.options?.folded?Math.max(5,(g.maxPairCount||4)+1):5;
  const ii=OkeyEngine.face(g.indicator,g.indicator),okey={number:ii.number%13+1,color:ii.color};
  const top=v.players[2],topname=e((g.names?.[top]||'Emre').split(' • ')[0]);
- return `<div id="v3Game" class="v3-game v7-game v13-game v21-game v39-game v43-game v44-game ${isMe?'v13-myturn':'v13-observe'}" aria-label="HUNTER GAMES 101 Okey 4 oyunculu masa">
- <header class="v13-top"><div class="v41-reference-brand" aria-label="HUNTER GAMES 101 Okey"></div><div class="v44-stake" title="Bu masanın belirlenen giriş çipi ve demo cüzdanı"><span>🪙 MASA ${fmt(g.options?.stake||5000)}</span><span>◈ CÜZDAN ${fmt(state.coins)}</span></div><div class="v39-game-title" aria-label="HUNTER GAMES 101 Okey"><span class="v39-wolf">🐺 HUNTER GAMES</span><strong>101 <em>OKEY</em></strong></div><div class="v13-top-left"><div class="v13-top-pill" title="Sanal çip"><span class="v13-gold">🪙</span>${fmt(state.coins)}</div><div class="v13-top-pill" title="Oyun süresi"><span class="v13-gold">🕒</span><span class="v13-liveclock">${v13Elapsed()}</span></div></div>
+ return `<div id="v3Game" class="v3-game v7-game v13-game v21-game v39-game v43-game v44-game v46-game ${isMe?'v13-myturn':'v13-observe'}" aria-label="101 Okey masa">
+ <header class="v13-top"><div class="v46-banner" aria-hidden="true">TURNUVALARDA <b>ŞAMPİYON</b> OL</div><div class="v41-reference-brand" aria-label="101 Okey"></div><div class="v44-stake" title="Bu masanın belirlenen giriş çipi ve demo cüzdanı"><span>🪙 MASA ${fmt(g.options?.stake||5000)}</span><span>◈ CÜZDAN ${fmt(state.coins)}</span></div><div class="v39-game-title" aria-label="HUNTER GAMES 101 Okey"><span class="v39-wolf">🐺 HUNTER GAMES</span><strong>101 <em>OKEY</em></strong></div><div class="v13-top-left"><div class="v13-top-pill" title="Sanal çip"><span class="v13-gold">🪙</span>${fmt(state.coins)}</div><div class="v13-top-pill" title="Oyun süresi"><span class="v13-gold">🕒</span><span class="v13-liveclock">${v13Elapsed()}</span></div></div>
  <div class="v13-top-person"><div class="v44-chat-bubble" aria-hidden="true">💬 İyi oyunlar!</div><img src="${V3_AVATARS[1]}" alt="Üst oyuncu"><div><div class="v13-seatname">${topname}</div><small>${v.handCounts?.[top]??21} taş${v.turn===2?' · SIRA ONDA':''}</small></div></div>
  <div class="v13-top-right"><button type="button" class="v13-tiny-button v44-scores-button" data-v3-action="scores" title="11 el gerçek skor/ceza tablosu">▤</button><button type="button" class="v13-tiny-button" data-v44-quickchat title="Hızlı sohbet">💬</button>${v16RoomBadge(g)}<button type="button" class="v13-tiny-button" data-page="friends" title="Arkadaşlar">👥</button><button type="button" class="v13-tiny-button v13-store" data-page="shop">SATIN AL</button><button type="button" class="v13-tiny-button" data-v3-action="fullscreen" title="Tam ekran">⛶</button><button type="button" class="v13-tiny-button" data-page="games" title="Oyunlara Dön">☰</button></div></header>
  <div class="v21-middle">
  ${v21Side(v,'left')}
- <section class="v13-square-board v21-mainboard v3-table" data-purpose="center-mat-board" title="Seri ve çift perlerini buradaki karelere aç"><div class="v13-watermark">HUNTER GAMES</div>${v9Board(g,isMe)}<div class="v44-pair-badge" title="Eldeki hazırlanabilir çift sayısı">${info.pairCount} / ${pairNeed} ÇİFT</div><div class="v21-northback" aria-hidden="true">${Array.from({length:15},()=>'<i></i>').join('')}</div><div class="v21-board-meta"><span>${g.options?.paired?'Eşli':'Tekli'}</span> · <span>${g.options?.folded?'Katlamalı':'Katlamasız'}</span> · <span>${g.round}/11 EL</span></div></section>
+ <section class="v13-square-board v21-mainboard v3-table" data-purpose="center-mat-board" title="Seri ve çift perlerini buradaki karelere aç"><div class="v13-watermark">101</div>${v9Board(g,isMe)}<div class="v44-pair-badge" title="Eldeki hazırlanabilir çift sayısı">${info.pairCount} / ${pairNeed} ÇİFT</div><div class="v21-northback" aria-hidden="true">${Array.from({length:15},()=>'<i></i>').join('')}</div><div class="v21-board-meta"><span>${g.options?.paired?'Eşli':'Tekli'}</span> · <span>${g.options?.folded?'Katlamalı':'Katlamasız'}</span> · <span>${g.round}/11 EL</span></div></section>
  ${v21RightTools(g,isMe,ii,okey)}
  ${v21Side(v,'right')}
  </div>
